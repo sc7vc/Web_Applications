@@ -12,45 +12,99 @@ TODO:
 <html lang="en">
 <head>
     <title>RWD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<style>
+    * {
+  box-sizing: border-box;
+}
+.col-1 {width: 33.33%;}
+.col-2 {width: 33.66%;}
+.col-3 {width: 33%;}
+.col-4 {width: 50%;}
+.col-5 {
+    width: 50%;
+}
+.col-6 {
+    width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    body {
+      background-color: #333;
+      color: #3498db;
+    }
+  body {
+          display: grid;
+          grid-auto-flow: column;
+          gap: 6px;
+      }
+      img{
+          max-height: 100%;
+        max-width: 100%;
+      }
+      #main{
+          float:left;
+      }
+      .al{
+          float: right;
+      }
+      #first{
+          float: left;
+      }
+</style>
 </head>
 <body>
 <div>
-    <div><img alt="Bean" src="../documentation/bean.jpg"></div>
-    <div>
-        <h1>Srinivas Chenna</h1>
-        <h3>Student</h3>
+    
+</div> 
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+        <img alt="Bean" src="../documentation/bean.jpg" id="main" />
+        </div>
+        <div class="col-5">
+        <h1 class="al">Srinivas Chenna</h1>
     </div>
-</div>
+    <div class="col-6">
+        <h3 class="al">Student</h3>
+    </div>
+
 <div>
-    <img alt="Image" src="../documentation/Image.png">
+    <img alt="Image" src="../documentation/Image.png" width=1450 height=350>
+
 </div>
 <div>
     <h2>Featured Work </h2>
 </div>
-<div>
-    <div>
-        <img alt="PlaceHolderImage3" src="PlaceHolderImages/555x300">
-        <h3>App1</h3>
-        <p><a href="#">Link to project</a></p>
+    <div class="col-1">
+        <img alt="Appify" src="../documentation/app1.png" width=100 height=100>
+        <h3>Appify</h3>
+        <p><a href="https://github.com/sc7vc/Web_Applications/blob/main/Web/ICP3/documentation/app1.png">Link to project</a></p>
     </div>
-    <div>
-        <img alt="PlaceHolderImage3" src="PlaceHolderImages/555x300">
-        <h3>App2</h3>
-        <p><a href="#">Link to project</a></p>
+    
+    <div class="col-2">
+        <img alt="SunFlower" src="../documentation/app2.png" width=100 height=100>
+        <h3>SunFlower</h3>
+        <p><a href="https://github.com/sc7vc/Web_Applications/blob/main/Web/ICP3/documentation/app2.png">Link to project</a></p>
+    </div>
+    <div class="col-3">
+        <img alt="Bokeh" src="../documentation/app3.png" width=100 height=100>
+        <h3>Bokeh</h3>
+        <p><a href="https://github.com/sc7vc/Web_Applications/blob/main/Web/ICP3/documentation/app3.png">Link to project</a></p>
     </div>
 </div>
-<div>
-    <div>
-        <img alt="PlaceHolderImage3" src="PlaceHolderImages/555x300">
-        <h3>App3</h3>
-        <p><a href="#">Link to project</a></p>
-    </div>
-    <div>
-        <img alt="PlaceHolderImage3" src="PlaceHolderImages/555x300">
-        <h3>App4</h3>
-        <p><a href="#">Link to project</a></p>
-    </div>
 </div>
 
 
