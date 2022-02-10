@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Github User Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = "script.js"></script>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            background-color: #bdf5df;
+        }
+
+        body {
+            border: 5px solid pink;
+            padding: 20px;
+        }
+
+        form.example input[type=text] {
+            padding: 10px;
+            font-size: 16px;
+            border: 3px solid black;
+            float: left;
+            width: 50%;
+            background: #ddeef51f;
+            margin-top: 70px;
+        }
+
+        form.example button {
+            float: left;
+            width: 43%;
+            padding: 10px;
+            background: #B9C1B9;
+            color: #196B19;
+            font-size: 16px;
+            font-style: italic;
+            border: 3px solid black;
+            font-family: "Festive";
+            cursor: pointer;
+            margin-top: 70px;
+            margin-bottom: 50px;
+        }
+
+        form.example button:hover {
+            background: rgb(216, 166, 197);
+        }
+
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        h2{
+            color: #fc0d0d;
+            font-family: "Festive";
+            font-size: 18px;
+            padding: 10px;
+            margin-left: 250px;
+        }
+
+        #image{
+            width: 150px;
+            height: 150px;
+            border:5px solid rgb(214, 121, 121);
+            background-color: #2E2C2C;
+            background-repeat: no-repeat;
+            color:#FFFFFF;
+            text-align: center;
+            background-size: contain;
+            margin-left: 265px;
+            margin-bottom: 35px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+<form class="example" style="margin:auto;max-width:340px">
+    <input type="text" placeholder="GitHub Username" name="search">
+    <button type="button" onclick="afterClick()">Fetch Data</button>
+</form>
+
+<div id = "image"></div>
+
+<h2 id="field1">Name         :</h2>
+<h2 id="field2">Id           :</h2>
+<h2 id="field3">Public repos :</h2>
+<h2 id="field4">Followers    :</h2>
+<h2 id="field5">Following    :</h2>
+<h2 id="field6">URL          :</h2>
+
+</body>
+</html> 
