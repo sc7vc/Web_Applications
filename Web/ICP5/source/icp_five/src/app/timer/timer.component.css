@@ -1,0 +1,30 @@
+#timer {
+  margin-top: 10%;
+  background: rgb(231, 41, 190);
+  
+}
+
+.container {
+  width: 90%;
+  text-align: center;
+  padding: 20px; 
+  background: rgb(210, 140, 195);
+
+}
+
+
+input {
+  text-align: center;
+  padding: 4px 20px;
+  font-size: 24px;
+  width: 600px;
+  color: rgb(14, 7, 7)
+}
+
+.countdown {
+  font-size: 20px;
+  height: 50px;
+  color: rgb(11, 12, 9);
+}
+
+
