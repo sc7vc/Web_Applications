@@ -1,0 +1,8 @@
+.image{
+  height:150em;
+ /* background-size: cover;
+  background-size: contain;*/
+  width:100%;
+  background-image: url('~images/bg.jpg');
+  background-position: center;
+}
